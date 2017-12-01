@@ -50,6 +50,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4367052808636188}
   - component: {fileID: 205519794621194832}
+  - component: {fileID: 114480427382472852}
   m_Layer: 0
   m_Name: Thrombocyte_moving
   m_TagString: Untagged
@@ -308,6 +309,39 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1543123064449546}
   m_Mesh: {fileID: 4300006, guid: 1813e04ad23ea60419a05440b98c9d55, type: 3}
+--- !u!114 &114480427382472852
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1443086107795290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fad2d3a7a7794547b134bf68488801d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pathName: 
+  smoothMultiplier: 200
+  updateInterval: 0.013
+  playOnStart: 1
+  startDelay: 0
+  setValueOnStart: 0
+  closedLoop: 0
+  autoLoop: 1
+  shouldDuplicate: 0
+  duplicationMultiplier: 3
+  duplicationScaleVector: {x: 0, y: 0, z: 1}
+  shouldLookRotate: 1
+  overrideUpVector: 0
+  upVector: {x: 0, y: 0, z: 0}
+  lerpUpVector: 0
+  endUpVector: {x: 0.3, y: 0.6, z: 0.7}
+  endUpVectorPercent: 1
+  showSlider: 0
+  currentIndex: 0
+  currentFractionalIndex: 0
+  myMovementState: 0
+  lookOffset: 5
 --- !u!205 &205519794621194832
 LODGroup:
   m_ObjectHideFlags: 1

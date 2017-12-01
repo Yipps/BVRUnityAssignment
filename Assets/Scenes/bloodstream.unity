@@ -158,56 +158,6 @@ MonoBehaviour:
   initialized: 0
   initialName: 
   pathVisible: 1
---- !u!1 &139688030
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 139688031}
-  - component: {fileID: 139688032}
-  m_Layer: 0
-  m_Name: CellTraversal
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &139688031
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 139688030}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.022119101}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &139688032
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 139688030}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f88bc32cf5c684b3f844c45d448470a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pathName: path_1
-  pathColor: {r: 0, g: 1, b: 1, a: 1}
-  nodes:
-  - {x: 0, y: 0, z: 0}
-  - {x: 2, y: 2, z: 15}
-  - {x: 1, y: 5, z: 30}
-  nodeCount: 3
-  initialized: 0
-  initialName: 
-  pathVisible: 1
 --- !u!1 &515184956
 GameObject:
   m_ObjectHideFlags: 0
@@ -246,10 +196,15 @@ MonoBehaviour:
   erythrocyteRadius: 5
   leukocyteRadius: 5
   thrombocyteRadius: 5
-  isSpawningErythrocyte: 0
-  isSpawningLeukocyte: 0
-  isSpawningThrombocyte: 0
-  cellPaths: []
+  isSpawningErythrocyte: 1
+  isSpawningLeukocyte: 1
+  isSpawningThrombocyte: 1
+  cellPaths:
+  - {fileID: 1352844839}
+  - {fileID: 570895927}
+  - {fileID: 34234755}
+  - {fileID: 668504149}
+  - {fileID: 835220477}
 --- !u!4 &515184958
 Transform:
   m_ObjectHideFlags: 0
@@ -445,7 +400,7 @@ Transform:
   - {fileID: 668504148}
   - {fileID: 835220476}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1352844837
 GameObject:

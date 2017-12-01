@@ -22,7 +22,7 @@ public class SceneManager : MonoBehaviour {
     public bool isSpawningThrombocyte;
 
     public Utility_Path[] cellPaths;
-    
+    int numPaths;
 
 
     // Use this for initialization
@@ -30,40 +30,43 @@ public class SceneManager : MonoBehaviour {
         erythrocyteRate = 1f;
         leukocyteRate = 1f;
         ThrombocyteRate = 1f;
-
+        numPaths = cellPaths.Length;
 
         if(isSpawningErythrocyte)
             InvokeRepeating("SpawnErythrocyte", 1f, erythrocyteRate);
 
         if (isSpawningLeukocyte)
-            InvokeRepeating("SpawnLeukocyte", 1f, leukocyteRate);
+            InvokeRepeating("SpawnLeukocyte", 3f, leukocyteRate);
 
         if (isSpawningThrombocyte)
-            InvokeRepeating("SpawnThrombocyte", 1f, ThrombocyteRate);
+            InvokeRepeating("SpawnThrombocyte", 5f, ThrombocyteRate);
 
     }
 
     void SpawnErythrocyte()
     {
-        Vector3 pathPos = cellPaths[Random.Range(-cellPaths.Length, cellPaths.Length)].transform.position;
-        GameObject instance = Instantiate(Erythrocyte, pathPos, Quaternion.identity);
-        //Utility_FollowSpline cellMovement = instance.AddComponent<Utility_FollowSpline>();
 
+        Utility_Path cellPath = cellPaths[Random.Range(0, numPaths)];
+        GameObject instance = Instantiate(Erythrocyte, cellPath.transform.position, Quaternion.identity);
+        Utility_FollowSpline cellMovement = instance.GetComponent<Utility_FollowSpline>();
+        cellMovement.pathName = cellPath.name;
 
     }
 
     void SpawnLeukocyte()
     {
-        Vector3 pathPos = cellPaths[Random.Range(-cellPaths.Length, cellPaths.Length)].transform.position;
-        GameObject instance = Instantiate(Leukocyte, pathPos, Quaternion.identity);
-        //Utility_FollowSpline cellMovement = instance.AddComponent<Utility_FollowSpline>();
+        Utility_Path cellPath = cellPaths[Random.Range(0, numPaths)];
+        GameObject instance = Instantiate(Leukocyte, cellPath.transform.position, Quaternion.identity);
+        Utility_FollowSpline cellMovement = instance.GetComponent<Utility_FollowSpline>();
+        cellMovement.pathName = cellPath.name;
     }
 
     void SpawnThrombocyte()
     {
-        Vector3 pathPos = cellPaths[Random.Range(-cellPaths.Length, cellPaths.Length)].transform.position;
-        GameObject instance = Instantiate(Thrombocyte, pathPos, Quaternion.identity);
-        //Utility_FollowSpline cellMovement = instance.AddComponent<Utility_FollowSpline>();
+        Utility_Path cellPath = cellPaths[Random.Range(0, numPaths)];
+        GameObject instance = Instantiate(Thrombocyte, cellPath.transform.position, Quaternion.identity);
+        Utility_FollowSpline cellMovement = instance.GetComponent<Utility_FollowSpline>();
+        cellMovement.pathName = cellPath.name;
     }
 
 }

@@ -51,7 +51,7 @@ GameObject:
   - component: {fileID: 4367052808636188}
   - component: {fileID: 205519794621194832}
   m_Layer: 0
-  m_Name: Thrombocyte
+  m_Name: Thrombocyte_moving
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

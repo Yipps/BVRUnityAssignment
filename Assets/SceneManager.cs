@@ -13,9 +13,9 @@ public class SceneManager : MonoBehaviour {
     public float leukocyteRate;
     public float ThrombocyteRate;
 
-    public float erythrocyteRadius;
-    public float leukocyteRadius;
-    public float thrombocyteRadius;
+    //public float erythrocyteRadius;
+    //public float leukocyteRadius;
+    //public float thrombocyteRadius;
 
     public bool isSpawningErythrocyte;
     public bool isSpawningLeukocyte;

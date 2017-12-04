@@ -24,6 +24,7 @@ public class SceneManager : MonoBehaviour {
     public Utility_Path[] cellPaths;
     int numPaths;
 
+    int pathCounter;
 
     // Use this for initialization
     void Start () {
@@ -31,6 +32,7 @@ public class SceneManager : MonoBehaviour {
         leukocyteRate = 1f;
         ThrombocyteRate = 1f;
         numPaths = cellPaths.Length;
+        pathCounter = 0;
 
         if(isSpawningErythrocyte)
             InvokeRepeating("SpawnErythrocyte", 1f, erythrocyteRate);
@@ -45,17 +47,15 @@ public class SceneManager : MonoBehaviour {
 
     void SpawnErythrocyte()
     {
-
-        Utility_Path cellPath = cellPaths[Random.Range(0, numPaths)];
+        Utility_Path cellPath = RandomPath();
         GameObject instance = Instantiate(Erythrocyte, cellPath.transform.position, Quaternion.identity);
         Utility_FollowSpline cellMovement = instance.GetComponent<Utility_FollowSpline>();
         cellMovement.pathName = cellPath.name;
-
     }
 
     void SpawnLeukocyte()
     {
-        Utility_Path cellPath = cellPaths[Random.Range(0, numPaths)];
+        Utility_Path cellPath = RandomPath();
         GameObject instance = Instantiate(Leukocyte, cellPath.transform.position, Quaternion.identity);
         Utility_FollowSpline cellMovement = instance.GetComponent<Utility_FollowSpline>();
         cellMovement.pathName = cellPath.name;
@@ -63,10 +63,30 @@ public class SceneManager : MonoBehaviour {
 
     void SpawnThrombocyte()
     {
-        Utility_Path cellPath = cellPaths[Random.Range(0, numPaths)];
+        Utility_Path cellPath = RandomPath();
         GameObject instance = Instantiate(Thrombocyte, cellPath.transform.position, Quaternion.identity);
         Utility_FollowSpline cellMovement = instance.GetComponent<Utility_FollowSpline>();
         cellMovement.pathName = cellPath.name;
+    }
+
+    Utility_Path RandomPath ()
+    {
+        pathCounter++;
+
+        if (pathCounter == cellPaths.Length-1)
+        {
+            //shuffle array
+            for (int i = 0; i < cellPaths.Length; i++)
+            {
+                Utility_Path temp = cellPaths[i];
+                int randomIndex = Random.Range(i, cellPaths.Length);
+                cellPaths[i] = cellPaths[randomIndex];
+                cellPaths[randomIndex] = temp;
+            }
+            pathCounter = 0;
+        }
+
+        return cellPaths[pathCounter];
     }
 
 }

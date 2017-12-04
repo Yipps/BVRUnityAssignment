@@ -128,7 +128,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1545349363774424}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 200, y: 200, z: 200}
   m_Children:
@@ -333,21 +333,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pathName: 
-  smoothMultiplier: 200
+  smoothMultiplier: 100
   updateInterval: 0.013
   playOnStart: 1
   startDelay: 0
   setValueOnStart: 0
   closedLoop: 0
-  autoLoop: 1
+  autoLoop: 0
   shouldDuplicate: 0
   duplicationMultiplier: 3
   duplicationScaleVector: {x: 0, y: 0, z: 1}
   shouldLookRotate: 1
-  overrideUpVector: 0
+  overrideUpVector: 1
   upVector: {x: 0, y: 0, z: 0}
-  lerpUpVector: 0
-  endUpVector: {x: 0.3, y: 0.6, z: 0.7}
+  lerpUpVector: 1
+  endUpVector: {x: 4, y: 30, z: 0.8}
   endUpVectorPercent: 1
   showSlider: 0
   currentIndex: 0
@@ -363,7 +363,7 @@ LODGroup:
   serializedVersion: 2
   m_LocalReferencePoint: {x: 0, y: 0, z: 0.00022119097}
   m_Size: 0.006429556
-  m_FadeMode: 0
+  m_FadeMode: 1
   m_AnimateCrossFading: 0
   m_LODs:
   - screenRelativeHeight: 0.25

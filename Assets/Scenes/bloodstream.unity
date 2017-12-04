@@ -194,14 +194,16 @@ MonoBehaviour:
   leukocyteRate: 1
   ThrombocyteRate: 1
   isSpawningErythrocyte: 1
-  isSpawningLeukocyte: 1
-  isSpawningThrombocyte: 1
+  isSpawningLeukocyte: 0
+  isSpawningThrombocyte: 0
   cellPaths:
   - {fileID: 1352844839}
   - {fileID: 570895927}
   - {fileID: 34234755}
   - {fileID: 668504149}
   - {fileID: 835220477}
+  - {fileID: 1609020852}
+  - {fileID: 559419887}
 --- !u!4 &515184958
 Transform:
   m_ObjectHideFlags: 0
@@ -259,7 +261,7 @@ MonoBehaviour:
   pathName: path_7
   pathColor: {r: 0, g: 1, b: 1, a: 1}
   nodes:
-  - {x: 3.8168411, y: -0.89097023, z: 0}
+  - {x: 2.5193782, y: -0.89097023, z: 0}
   - {x: 0.050688744, y: -2.0282826, z: 10.664803}
   - {x: 5.0614166, y: 0.22668457, z: 20}
   nodeCount: 0
@@ -409,9 +411,9 @@ MonoBehaviour:
   pathName: path_5
   pathColor: {r: 0, g: 1, b: 1, a: 1}
   nodes:
-  - {x: 3.7002265, y: -0.9396477, z: 0}
-  - {x: 0.5575683, y: -1.9120259, z: 9.373627}
-  - {x: 3.4561925, y: -0.26620483, z: 20}
+  - {x: 1.1891677, y: -0.9396477, z: 0}
+  - {x: -1.4042692, y: -2.7877746, z: 11.052281}
+  - {x: 2.776216, y: -0.26620483, z: 20}
   nodeCount: 0
   initialized: 0
   initialName: 
@@ -609,9 +611,9 @@ MonoBehaviour:
   pathName: path_6
   pathColor: {r: 0, g: 1, b: 1, a: 1}
   nodes:
-  - {x: 2.4330273, y: 1.9898396, z: 0}
-  - {x: 0.050688982, y: 0.46472502, z: 10}
-  - {x: 3.4561925, y: 2.221096, z: 20}
+  - {x: 3.838835, y: 1.5766802, z: 0}
+  - {x: -0.6459453, y: -0.2534194, z: 8.906181}
+  - {x: 3.0100634, y: 1.9374104, z: 20}
   nodeCount: 0
   initialized: 0
   initialName: 
@@ -705,48 +707,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 22.994001, y: -22.548, z: -5.8890004}
---- !u!1001 &1672434857
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4728145298122026, guid: ddf5b7ff28aa6fa4e9555084a54ff4b6, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4728145298122026, guid: ddf5b7ff28aa6fa4e9555084a54ff4b6, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4728145298122026, guid: ddf5b7ff28aa6fa4e9555084a54ff4b6, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4728145298122026, guid: ddf5b7ff28aa6fa4e9555084a54ff4b6, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4728145298122026, guid: ddf5b7ff28aa6fa4e9555084a54ff4b6, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4728145298122026, guid: ddf5b7ff28aa6fa4e9555084a54ff4b6, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4728145298122026, guid: ddf5b7ff28aa6fa4e9555084a54ff4b6, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4728145298122026, guid: ddf5b7ff28aa6fa4e9555084a54ff4b6, type: 2}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: ddf5b7ff28aa6fa4e9555084a54ff4b6, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &1957808394
 Prefab:
   m_ObjectHideFlags: 0
@@ -784,7 +744,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f3f0fd277d0c1934dad57eccfd0322c9, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f3f0fd277d0c1934dad57eccfd0322c9, type: 3}
       propertyPath: m_LocalScale.x
@@ -798,6 +758,7 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 100
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 9500000, guid: f3f0fd277d0c1934dad57eccfd0322c9, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: f3f0fd277d0c1934dad57eccfd0322c9, type: 3}
   m_IsPrefabParent: 0

@@ -449,21 +449,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pathName: 
-  smoothMultiplier: 200
+  smoothMultiplier: 150
   updateInterval: 0.013
   playOnStart: 1
   startDelay: 0
   setValueOnStart: 0
   closedLoop: 0
-  autoLoop: 1
+  autoLoop: 0
   shouldDuplicate: 0
   duplicationMultiplier: 3
   duplicationScaleVector: {x: 0, y: 0, z: 1}
-  shouldLookRotate: 1
+  shouldLookRotate: 0
   overrideUpVector: 0
   upVector: {x: 0, y: 0, z: 0}
-  lerpUpVector: 0
-  endUpVector: {x: 0.3, y: 0.6, z: 0.7}
+  lerpUpVector: 1
+  endUpVector: {x: 0.8, y: 0.8, z: 0.8}
   endUpVectorPercent: 1
   showSlider: 0
   currentIndex: 0
@@ -479,7 +479,7 @@ LODGroup:
   serializedVersion: 2
   m_LocalReferencePoint: {x: 0.006419599, y: 0.0026630238, z: 0.0056204833}
   m_Size: 0.22069743
-  m_FadeMode: 0
+  m_FadeMode: 1
   m_AnimateCrossFading: 0
   m_LODs:
   - screenRelativeHeight: 0.25

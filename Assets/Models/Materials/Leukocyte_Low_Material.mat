@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Leukocyte_Low_Material
-  m_Shader: {fileID: 4800000, guid: 6331d9c01654341608fbf4f48aeed5e6, type: 3}
+  m_Shader: {fileID: 4800000, guid: c8a471febd90e455e9ef8b480f5b67a1, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0

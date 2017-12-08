@@ -353,7 +353,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pathName: 
-  smoothMultiplier: 100
+  smoothMultiplier: 80
   updateInterval: 0.013
   playOnStart: 1
   startDelay: 0

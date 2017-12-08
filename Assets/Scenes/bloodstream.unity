@@ -194,8 +194,8 @@ MonoBehaviour:
   leukocyteRate: 1
   ThrombocyteRate: 1
   isSpawningErythrocyte: 1
-  isSpawningLeukocyte: 0
-  isSpawningThrombocyte: 0
+  isSpawningLeukocyte: 1
+  isSpawningThrombocyte: 1
   cellPaths:
   - {fileID: 1352844839}
   - {fileID: 570895927}
@@ -701,12 +701,87 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1643701642}
   m_LocalRotation: {x: -0.22038452, y: 0.24617876, z: -0.057605833, w: -0.9420766}
-  m_LocalPosition: {x: 1.6400757, y: 1.795552, z: -1.7604299}
+  m_LocalPosition: {x: 1.42, y: 1.63, z: -1.36}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 22.994001, y: -22.548, z: -5.8890004}
+--- !u!1001 &1712273313
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4728145298122026, guid: 7efff39713e055a4e925c9bb7a1d46cc, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4728145298122026, guid: 7efff39713e055a4e925c9bb7a1d46cc, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4728145298122026, guid: 7efff39713e055a4e925c9bb7a1d46cc, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4728145298122026, guid: 7efff39713e055a4e925c9bb7a1d46cc, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4728145298122026, guid: 7efff39713e055a4e925c9bb7a1d46cc, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4728145298122026, guid: 7efff39713e055a4e925c9bb7a1d46cc, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4728145298122026, guid: 7efff39713e055a4e925c9bb7a1d46cc, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4728145298122026, guid: 7efff39713e055a4e925c9bb7a1d46cc, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4728145298122026, guid: 7efff39713e055a4e925c9bb7a1d46cc, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 205532306202411316, guid: 7efff39713e055a4e925c9bb7a1d46cc,
+        type: 2}
+      propertyPath: m_LODs.Array.data[3].screenRelativeHeight
+      value: 0.0066254707
+      objectReference: {fileID: 0}
+    - target: {fileID: 205532306202411316, guid: 7efff39713e055a4e925c9bb7a1d46cc,
+        type: 2}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.04852192
+      objectReference: {fileID: 0}
+    - target: {fileID: 205532306202411316, guid: 7efff39713e055a4e925c9bb7a1d46cc,
+        type: 2}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.026621502
+      objectReference: {fileID: 0}
+    - target: {fileID: 205532306202411316, guid: 7efff39713e055a4e925c9bb7a1d46cc,
+        type: 2}
+      propertyPath: m_AnimateCrossFading
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1545349363774424, guid: 7efff39713e055a4e925c9bb7a1d46cc, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 205532306202411316, guid: 7efff39713e055a4e925c9bb7a1d46cc,
+        type: 2}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.18474887
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 7efff39713e055a4e925c9bb7a1d46cc, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &1957808394
 Prefab:
   m_ObjectHideFlags: 0

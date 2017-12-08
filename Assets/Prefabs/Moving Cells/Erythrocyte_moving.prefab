@@ -38,6 +38,7 @@ GameObject:
   - component: {fileID: 4728145298122026}
   - component: {fileID: 205532306202411316}
   - component: {fileID: 114827794349022642}
+  - component: {fileID: 114479570294868538}
   m_Layer: 0
   m_Name: Erythrocyte_moving
   m_TagString: Untagged
@@ -321,6 +322,25 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1377511517401124}
   m_Mesh: {fileID: 4300000, guid: a1fcbddaea19a8f4082cbc4f1db664c7, type: 3}
+--- !u!114 &114479570294868538
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1545349363774424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 914908a0d1bfb4e8ab5f3d83ee3738a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: {x: 10, y: 30, z: 20}
+  speed: 2
+  space: 0
+  pingPong: 0
+  pingPongTime: 3
+  randomizeSpeed: 1
+  minSpeed: 1
+  maxSpeed: 3
 --- !u!114 &114827794349022642
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -343,11 +363,11 @@ MonoBehaviour:
   shouldDuplicate: 0
   duplicationMultiplier: 3
   duplicationScaleVector: {x: 0, y: 0, z: 1}
-  shouldLookRotate: 1
-  overrideUpVector: 1
+  shouldLookRotate: 0
+  overrideUpVector: 0
   upVector: {x: 0, y: 0, z: 0}
-  lerpUpVector: 1
-  endUpVector: {x: 4, y: 30, z: 0.8}
+  lerpUpVector: 0
+  endUpVector: {x: 0, y: 0, z: 0}
   endUpVectorPercent: 1
   showSlider: 0
   currentIndex: 0
@@ -363,18 +383,18 @@ LODGroup:
   serializedVersion: 2
   m_LocalReferencePoint: {x: 0, y: 0, z: 0.00022119097}
   m_Size: 0.006429556
-  m_FadeMode: 1
+  m_FadeMode: 2
   m_AnimateCrossFading: 0
   m_LODs:
   - screenRelativeHeight: 0.25
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 23887372478160840}
-  - screenRelativeHeight: 0.125
+  - screenRelativeHeight: 0.03049375
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 23475689669075310}
-  - screenRelativeHeight: 0.0625
+  - screenRelativeHeight: 0.018837335
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 23956085440940204}

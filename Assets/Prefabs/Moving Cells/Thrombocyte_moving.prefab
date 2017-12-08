@@ -51,6 +51,7 @@ GameObject:
   - component: {fileID: 4367052808636188}
   - component: {fileID: 205519794621194832}
   - component: {fileID: 114480427382472852}
+  - component: {fileID: 114168144800296044}
   m_Layer: 0
   m_Name: Thrombocyte_moving
   m_TagString: Untagged
@@ -309,6 +310,25 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1543123064449546}
   m_Mesh: {fileID: 4300006, guid: 1813e04ad23ea60419a05440b98c9d55, type: 3}
+--- !u!114 &114168144800296044
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1443086107795290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 914908a0d1bfb4e8ab5f3d83ee3738a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: {x: 20, y: 40, z: 30}
+  speed: 1
+  space: 0
+  pingPong: 0
+  pingPongTime: 3
+  randomizeSpeed: 1
+  minSpeed: 1
+  maxSpeed: 3
 --- !u!114 &114480427382472852
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -321,7 +341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pathName: 
-  smoothMultiplier: 75
+  smoothMultiplier: 90
   updateInterval: 0.013
   playOnStart: 1
   startDelay: 0
@@ -351,18 +371,18 @@ LODGroup:
   serializedVersion: 2
   m_LocalReferencePoint: {x: 0.000021704938, y: 0.00006814787, z: 0.00007976586}
   m_Size: 0.0019981533
-  m_FadeMode: 1
+  m_FadeMode: 2
   m_AnimateCrossFading: 0
   m_LODs:
   - screenRelativeHeight: 0.25
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 23846618822065172}
-  - screenRelativeHeight: 0.125
+  - screenRelativeHeight: 0.02045606
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 23604837561083358}
-  - screenRelativeHeight: 0.01
+  - screenRelativeHeight: 0.0012931958
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 23611880770773618}

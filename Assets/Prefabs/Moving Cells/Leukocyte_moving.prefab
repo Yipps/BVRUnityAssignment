@@ -36,6 +36,7 @@ GameObject:
   - component: {fileID: 4717764717329800}
   - component: {fileID: 205482136964175184}
   - component: {fileID: 114276768041023682}
+  - component: {fileID: 114163229052058766}
   m_Layer: 0
   m_Name: Leukocyte_moving
   m_TagString: Untagged
@@ -437,6 +438,25 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1547919570511124}
   m_Mesh: {fileID: 4300000, guid: 0ed6867e2977ee343bffe465a265d6ba, type: 3}
+--- !u!114 &114163229052058766
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1304491023864304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 914908a0d1bfb4e8ab5f3d83ee3738a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: {x: 5, y: 15, z: 10}
+  speed: 1
+  space: 0
+  pingPong: 0
+  pingPongTime: 3
+  randomizeSpeed: 1
+  minSpeed: -3
+  maxSpeed: 3
 --- !u!114 &114276768041023682
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -449,7 +469,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pathName: 
-  smoothMultiplier: 150
+  smoothMultiplier: 110
   updateInterval: 0.013
   playOnStart: 1
   startDelay: 0
@@ -479,7 +499,7 @@ LODGroup:
   serializedVersion: 2
   m_LocalReferencePoint: {x: 0.006419599, y: 0.0026630238, z: 0.0056204833}
   m_Size: 0.22069743
-  m_FadeMode: 1
+  m_FadeMode: 2
   m_AnimateCrossFading: 0
   m_LODs:
   - screenRelativeHeight: 0.25
@@ -490,7 +510,7 @@ LODGroup:
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 23224440379784838}
-  - screenRelativeHeight: 0.0625
+  - screenRelativeHeight: 0.031501487
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 23366094497665456}

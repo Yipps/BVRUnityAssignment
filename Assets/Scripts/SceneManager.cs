@@ -51,6 +51,7 @@ public class SceneManager : MonoBehaviour {
         GameObject instance = Instantiate(Erythrocyte, cellPath.transform.position, Quaternion.identity);
         Utility_FollowSpline cellMovement = instance.GetComponent<Utility_FollowSpline>();
         cellMovement.pathName = cellPath.name;
+        Destroy(instance, 6f);
     }
 
     void SpawnLeukocyte()
@@ -59,6 +60,7 @@ public class SceneManager : MonoBehaviour {
         GameObject instance = Instantiate(Leukocyte, cellPath.transform.position, Quaternion.identity);
         Utility_FollowSpline cellMovement = instance.GetComponent<Utility_FollowSpline>();
         cellMovement.pathName = cellPath.name;
+        Destroy(instance, 6f);
     }
 
     void SpawnThrombocyte()
@@ -67,6 +69,7 @@ public class SceneManager : MonoBehaviour {
         GameObject instance = Instantiate(Thrombocyte, cellPath.transform.position, Quaternion.identity);
         Utility_FollowSpline cellMovement = instance.GetComponent<Utility_FollowSpline>();
         cellMovement.pathName = cellPath.name;
+        Destroy(instance, 6f);
     }
 
     Utility_Path RandomPath ()
